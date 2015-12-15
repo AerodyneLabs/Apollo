@@ -1,10 +1,9 @@
 # Apollo
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A high altitude balloon tracking and prediction javascript based front end.
 [![Build Status](https://travis-ci.org/AerodyneLabs/Apollo.svg)](https://travis-ci.org/AerodyneLabs/Apollo)
 [![Code Climate](https://codeclimate.com/github/AerodyneLabs/Apollo/badges/gpa.svg)](https://codeclimate.com/github/AerodyneLabs/Apollo)
-[![Coverage Status](https://coveralls.io/repos/AerodyneLabs/Apollo/badge.svg?branch=develop&service=github)](https://coveralls.io/github/AerodyneLabs/Apollo?branch=develop)
+[![Test Coverage](https://codeclimate.com/github/AerodyneLabs/Apollo/badges/coverage.svg)](https://codeclimate.com/github/AerodyneLabs/Apollo/coverage)
 
 ## Prerequisites
 
