@@ -1,0 +1,12 @@
+<h2>Towers</h2>
+<ul>
+  {{#each model as |tower|}}
+    <li>
+      {{#link-to "airspace.towers.detail" tower}}
+        {{tower.code}} - {{tower.name}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}

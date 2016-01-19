@@ -1,0 +1,26 @@
+<h3>
+  {{model.name}} - Class {{model.classification}}
+</h3>
+Effective Date: {{model.effective}}<br/>
+
+<h4>Volumes</h4>
+<ul>
+  {{#each model.volumes as |volume|}}
+    <li>
+      {{volume.name}}:
+      {{volume.lowAltitude}}
+      {{#if volume.lowAgl}}
+        MAGL
+      {{else}}
+        MASL
+      {{/if}}
+      -
+      {{volume.highAltitude}}
+      {{#if volume.highAgl}}
+        MAGL
+      {{else}}
+        MASL
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

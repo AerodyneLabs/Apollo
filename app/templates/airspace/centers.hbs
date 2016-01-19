@@ -1,0 +1,12 @@
+<h2>Centers</h2>
+<ul>
+  {{#each model as |center|}}
+    <li>
+      {{#link-to "airspace.centers.detail" center}}
+        {{center.code}} - {{center.name}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}

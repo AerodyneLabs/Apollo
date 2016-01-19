@@ -1,0 +1,12 @@
+<h2>Airspaces</h2>
+<ul>
+  {{#each model as |airspace|}}
+    <li>
+      {{#link-to "airspace.airspaces.detail" airspace}}
+        {{airspace.name}} - Class {{airspace.classification}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}

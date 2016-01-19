@@ -1,0 +1,9 @@
+<h3>{{model.code}} - {{model.name}}</h3>
+Effective Date: {{model.effective}}<br/>
+Location: {{model.city}}, {{model.state}} ({{model.location.coordinates.[1]}}, {{model.location.coordinates.[0]}})<br/>
+Type: {{model.stationType}}<br/>
+{{#if model.master}}
+  Master:{{#link-to "airspace.towers.detail" model.master}}
+    {{model.master.code}} - {{model.master.name}}
+  {{/link-to}}
+{{/if}}
