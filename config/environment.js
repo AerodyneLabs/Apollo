@@ -16,30 +16,6 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    },
-
-    contentSecurityPolicy: {
-      // Deny everything by default
-      'default-src': "'none'",
-
-      // Allow scripts
-      'script-src': ["'self'", "localhost:49152"],
-
-      // Allow fonts
-      'font-src': ["'self'"],
-
-      // Allow data
-      'connect-src': ["'self'", "localhost:4200"],
-
-      // Allow images
-      'img-src': "'self'",
-
-      // Allow inline styles and loaded CSS
-      'style-src': ["'self'", "'unsafe-inline'"],
-
-      // `media-src` will be omitted from policy
-      // Browser will fallback to default-src for media resources
-      'media-src': null
     }
   };
 
