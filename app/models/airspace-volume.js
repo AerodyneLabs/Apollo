@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
@@ -7,5 +8,12 @@ export default DS.Model.extend({
   lowAgl: DS.attr('boolean'),
   highAltitude: DS.attr('number'),
   highAgl: DS.attr('boolean'),
-  boundary: DS.attr()
+  boundary: DS.attr(),
+
+  leafletLocations: Ember.computed('boundary', function() {
+    let coords = this.get('boundary.coordinates');
+    return coords[0].map((item, index, enumerable) => {
+      return [item[1], item[0]];
+    });
+  })
 });
