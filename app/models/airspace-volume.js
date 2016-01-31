@@ -12,8 +12,10 @@ export default DS.Model.extend({
 
   leafletLocations: Ember.computed('boundary', function() {
     let coords = this.get('boundary.coordinates');
-    return coords[0].map((item, index, enumerable) => {
-      return [item[1], item[0]];
-    });
+    if(coords) {
+      return coords[0].map((item, index, enumerable) => {
+        return [item[1], item[0]];
+      });
+    }
   })
 });

@@ -15,9 +15,11 @@
 
   {{#each model as |airspace|}}
     {{#each airspace.volumes as |volume|}}
-      {{#polygon-layer locations=volume.leafletLocations}}
-        {{volume.name}}
-      {{/polygon-layer}}
+      {{#if volume.leafletLocations}}
+        {{#polygon-layer locations=volume.leafletLocations}}
+          {{volume.name}}
+        {{/polygon-layer}}
+      {{/if}}
     {{/each}}
   {{/each}}
 
