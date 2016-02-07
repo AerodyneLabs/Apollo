@@ -13,6 +13,10 @@ module.exports = function(defaults) {
         'images/marker-icon.png',
         'images/marker-shadow.png'
       ]
+    },
+
+    'ember-bootstrap': {
+      'importBootstrapCSS': false
     }
   });
 
