@@ -1,0 +1,9 @@
+<h3>{{model.code}} - {{model.name}}</h3>
+Effective Date: {{model.effective}}<br/>
+Location: {{model.city}}, {{model.state}} ({{model.location.coordinates.[1]}}, {{model.location.coordinates.[0]}})
+<h4>Volumes</h4>
+<ul>
+  {{#each model.volumes as |volume|}}
+    <li>{{volume.name}}</li>
+  {{/each}}
+</ul>

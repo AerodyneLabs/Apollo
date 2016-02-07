@@ -6,6 +6,20 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('airspace', function() {
+    this.route('centers', function() {
+      this.route('detail', {path: ':id'});
+    });
+    this.route('airspaces', function() {
+      this.route('detail', {path: ':id'});
+    });
+    this.route('navaids', function() {
+      this.route('detail', {path: ':id'});
+    });
+    this.route('towers', function() {
+      this.route('detail', {path: ':id'});
+    });
+  });
 });
 
 export default Router;
