@@ -2,7 +2,7 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('center', 'Unit | Model | center', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:airspace-volume']
 });
 
 test('it exists', function(assert) {
